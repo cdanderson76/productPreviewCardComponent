@@ -1,0 +1,36 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ /*Use 'margin: auto' for non flexbox/grid projects */
+ 
+ 
+ /* Fits images in containers no matter the size */
+ 
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ #canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+ }
+
+ #card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 375px;
+    height: 667px;
+    padding: 28px 16px;
+    align-items: center;
+    background-color: #F2EAE2;
+    border: 2px solid black;
+ }
+
+ 
