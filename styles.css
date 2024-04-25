@@ -8,14 +8,18 @@
  
  /* Fits images in containers no matter the size */
  
- img {
+ /* img {
      max-width: 100%;
      height: auto;
- }
+ } */
 
  .responsive {
    min-width: 100%;
-   max-height: 240px;
+   width: 343px;
+   height: 240px;
+   background-image: url('images/chanel-mobile.png');
+   background-repeat: no-repeat;
+   background-size: cover;
  }
 
  #canvas {
@@ -32,20 +36,12 @@
     flex-direction: column;
     justify-content: center;
     max-width: 343px;
-    min-width: 68%;
+    min-width: 69%;
     height: 611px;
     padding: 28px 0 28px 0;
     align-items: center;
     background-color: white;
     border-radius: 10px 10px 10px 10px;
- }
-
- /* START HERE!  IMPORT LONG IMAGE FROM ANKI!  MAY HAVE TO USE
- A DIFFERENT CLASS! */
-
- .responsive {
-   min-width: 300px;
-   height: 450px;
  }
 
  #flex {
@@ -150,11 +146,74 @@
    color: #6C7289;
  }
 
+ footer {
+  position: absolute;
+  bottom: 115px;
+ }
+
  .btn:hover {
    transition: 0.7s;
    cursor: pointer;
    background-color: #589981;
  }
+
+
+
+ .attribution {
+  margin-top: 1.875em;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.attribution, a {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+/* Animation for footer */
+
+footer a {
+  animation: smoothFill 5s ease-out 0s infinite both;
+}
+
+ @keyframes smoothFill {
+  00%,0%{
+    color: #ff0000;
+  }
+  8%{
+    color: #ff7f00;
+  }
+  16%{
+    color: #ffff00;
+  }
+  25%{
+    color: #7fff00;
+  }
+  33%{
+    color: #00ff00;
+  }
+  41%{
+    color: #00ff7f;
+  }
+  50%{
+    color: #00ffff;
+  }
+  58%{
+    color: #007fff;
+  }
+  66%{
+    color: #0000ff;
+  }
+  75%{
+    color: #7f00ff;
+  }
+  83%{
+    color: #ff00ff;
+  }
+  91%{
+    color: #ff007f;
+  }
+}
 
  @media( min-width: 768px ) {
    #card {
@@ -166,7 +225,15 @@
       flex-direction: row;
    }
 
-   
+   .responsive {
+      min-width: 0%;
+      max-width: 300px;
+      height: 450px;
+      background-image: url('images/chanel-desktop.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px 0 0 10px;
+   }
 
    .info-container {
       width: 300px;
@@ -196,6 +263,10 @@
    .old-dollars {
       position: absolute;
       bottom: 115px;
+   }
+
+   footer {
+    bottom: 190px;
    }
 
  }
