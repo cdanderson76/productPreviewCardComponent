@@ -2,55 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
  }
  /*Use 'margin: auto' for non flexbox/grid projects */
  
  
  /* Fits images in containers no matter the size */
  
- /* img {
-     max-width: 100%;
-     height: auto;
- } */
 
- .responsive {
+.responsive {
    min-width: 100%;
-   width: 343px;
-   height: 240px;
+   width: 21.4375em;
+   height: 15em;
    background-image: url('images/chanel-mobile.png');
    background-repeat: no-repeat;
    background-size: cover;
- }
+}
 
- #canvas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #F2EAE2;
- }
+/* Common Flex Containers */
 
- #card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 343px;
-    min-width: 69%;
-    height: 611px;
-    padding: 28px 0 28px 0;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
- }
-
- #flex {
+#canvas, #card, .btn {
    display: flex;
-   min-width: 100%;
-   margin: 0;
-   padding: 0;
-   flex-direction: column;
+   justify-content: center;
+   align-items: center;
  }
+
+/* Justify-Content Properties */
+
+
+#canvas {
+  width: 100%;
+  height: 100vh;
+  background-color: #F2EAE2;
+}
+
+#card {
+  flex-direction: column;
+  max-width: 343px;
+  min-width: 69%;
+  height: 611px;
+  padding: 28px 0 28px 0;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#flex {
+  display: flex;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
 
 .info-container {
    position: relative;
@@ -58,108 +60,107 @@
    padding: 24px;
 }
 
- .btn {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 295px;
-   min-width: 100%;
-   height: 48px;
-   font-family: Montserrat;
-   font-size: 14px;
-   font-style: normal;
-   font-weight: 600;
-   line-height: normal;
-   letter-spacing: 0.7px;
-   border-radius: 8px;
-   color: #FFF;
-   background-color: #3D8168;
-   margin-top: 20px;
- }
+.btn {
+  width: 295px;
+  min-width: 100%;
+  height: 48px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  border-radius: 8px;
+  color: #FFF;
+  background-color: #3D8168;
+  margin-top: 20px;
+}
 
- .btn img {
-   margin-right: 9px;
- }
+.btn img {
+  margin-right: 9px;
+}
 
- /* Typography */
+/* Typography */
 
- .perfume {
-   width: 92px;
-   height: 15px;
-   font-family: Montserrat;
-   font-size: 12px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: normal;
-   letter-spacing: 5px;
-   text-transform: uppercase;
- }
+/* Common Montserrat Font Families */
 
- .gabrielle {
-   width: 295px;
-   min-width: 100%;
-   height: 64px;
-   font-family: Fraunces;
-   font-size: 32px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 32px;
-   margin-top: 12px;
- }
+.perfume, .para, .old-dollars {
+  font-style: normal;
+  font-weight: 500;
+}
 
- .para {
-   width: 295px;
-   min-width: 100%;
-   height: 92px;
-   font-family: Montserrat;
-   font-size: 14px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 23px;
-   color: #6C7289;
-   margin: 16px 0 24px 0;
- }
+.gabrielle, .new-dollars {
+  font-family: Fraunces, sans-serif;
+}
 
- .new-dollars {
-   width: 127px;
-   height: 32px;
-   font-family: Fraunces;
-   font-size: 32px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 32px;
-   color: #3D8168;
-   margin-right: 19px;
- }
+.perfume {
+  width: 92px;
+  height: 15px;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
 
- .old-dollars {
-   position: absolute;
-   bottom: 96px;
-   width: 48px;
-   height: 23px;
-   font-family: Montserrat;
-   font-size: 13px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 23px; /* 176.923% */
-   text-decoration-line: line-through;
-   color: #6C7289;
- }
+.gabrielle {
+  width: 295px;
+  min-width: 100%;
+  height: 64px;
+  
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 12px;
+}
 
- footer {
+.para {
+  width: 295px;
+  min-width: 100%;
+  height: 92px;
+  font-size: 14px;
+  line-height: 23px;
+  color: #6C7289;
+  margin: 16px 0 24px 0;
+}
+
+.new-dollars {
+  width: 127px;
+  height: 32px;
+  font-family: Fraunces, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  color: #3D8168;
+  margin-right: 19px;
+}
+
+.old-dollars {
   position: absolute;
-  bottom: 115px;
- }
+  bottom: 96px;
+  width: 48px;
+  height: 23px;
+  font-size: 13px;
+  line-height: 23px; /* 176.923% */
+  text-decoration-line: line-through;
+  color: #6C7289;
+}
 
- .btn:hover {
-   transition: 0.7s;
-   cursor: pointer;
-   background-color: #589981;
- }
+footer {
+  position: absolute;
+  bottom: 70px;
+}
+
+.btn:hover {
+  transition: 0.7s;
+  cursor: pointer;
+  background-color: #589981;
+}
 
 
 
- .attribution {
+.attribution {
   margin-top: 1.875em;
   text-align: center;
   font-size: 1.2rem;
@@ -174,6 +175,7 @@
 
 footer a {
   animation: smoothFill 5s ease-out 0s infinite both;
+  text-decoration: none;
 }
 
  @keyframes smoothFill {
@@ -261,12 +263,11 @@ footer a {
    }
 
    .old-dollars {
-      position: absolute;
       bottom: 115px;
    }
 
    footer {
-    bottom: 190px;
+      bottom: 165px;
    }
 
  }
