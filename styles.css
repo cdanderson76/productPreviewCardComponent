@@ -217,8 +217,8 @@ footer a {
 
  @media( min-width: 768px ) {
    #card {
-      min-width: 600px;
-      height: 450px;
+      min-width: 37.5em;
+      height: 28.125em;
    }
 
    #flex {
@@ -227,40 +227,40 @@ footer a {
 
    .responsive {
       min-width: 0%;
-      max-width: 300px;
-      height: 450px;
+      max-width: 18.75em;
+      height: 28.125em;
       background-image: url('images/chanel-desktop.png');
       background-repeat: no-repeat;
       background-size: cover;
-      border-radius: 10px 0 0 10px;
+      border-radius: 0.625em 0 0 0.625em;
    }
 
    .info-container {
-      width: 300px;
-      height: 450px;
-      border-radius: 0 10px 10px 0;
+      width: 18.75em;
+      height: 28.125em;
+      border-radius: 0 0.625em 0.625em 0;
    }
 
    .gabrielle {
-      width: 236px;
-      height: 96px;
-      margin: 20px 0 30px 0;
+      width: 7.75em;
+      height: 3em;
+      margin: 1em 0 0.8em 0;
    }
 
    .para {
-      width: 237px;
-      height: 92px;
-      margin: 1.875em 0 1.875em;
+      width: 14.813em;
+      height: 5.75em;
+      margin: 1.9em 0 2.6em 0;
    }
 
    .btn {
       width: 14.75em;
       height: 3em;
-      margin-top: 1.875em;
+      margin-top: 2.6em;
    }
 
    .old-dollars {
-      bottom: 9.45em
+      bottom: 9.3em;
    }
 
    footer {
