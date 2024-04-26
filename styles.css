@@ -35,6 +35,7 @@
 
 
 #canvas {
+  flex-direction: column;
   margin-top: -30px;
   width: 100%;
   height: 100vh;
@@ -96,7 +97,7 @@
 
 /* Common Position: absolute Property */
 
-.old-dollars, footer {
+.old-dollars {
   position: absolute;
 }
 
@@ -265,10 +266,6 @@ footer a {
       bottom: 9.3em;
    }
 
-   footer {
-      bottom: 144px;
-   }
-
- }
+}
 
  
