@@ -1,5 +1,5 @@
 # productPreviewCardComponent
-**This is the desktop solution for the Frontend Mentor Product Preview Card Component.**
+**<color🟩>This is the desktop solution for the Frontend Mentor Product Preview Card Component.**
 
 This is an HTML & CSS-only challenge that tests out the ability to make a project responsive.  This is simply a project for view, however, I have added a hover effect for the 'button-like' element at the bottom of card component.
 
