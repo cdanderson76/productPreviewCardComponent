@@ -14,7 +14,7 @@ In reference to what I'd do next time, I'm not sure actually.  What I made sure 
 
 What challenges did you encounter, and how did you overcome them?
 
-Making the image responsive was the challenge for me here.  I've read the MDN articles, Stack Overflow...and I just couldn't figure out why I couldn't stretch the perfume image from the mobile layout without sacrificing the content of what I had already built.  I basically had to familiarize myself with percentages in combination of the 'max-width', 'min-width', and 'width' properties.  It took some fidgeting with the code in order for me to get it all put together, but eventually I found the solution.
+Making the image responsive was the challenge for me here.  I've read the MDN articles, Stack Overflow...and I just couldn't figure out why I couldn't stretch the perfume image from the mobile layout without sacrificing the content of what I had already built.  I basically had to familiarize myself with percentages in combination of the 'max-width', 'min-width', and 'width' properties.  It took some fidgeting with the code in order for me to get it all put together, but eventually I found the solution.  I also had a lot of issues getting the footer to view correctly in the mobile layout.  I had the position at 'absolute' because I didn't know how to get it to align below the card.  I took a break, a quick nap, and it occurred to me that I just needed to change the 'flex-direction' on my '.canvas' class to 'column'.
 
 
 What specific areas of your project would you like help with?
