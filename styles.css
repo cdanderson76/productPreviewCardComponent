@@ -154,6 +154,10 @@ footer {
   max-width: 90%;
 }
 
+.btn {
+  transition: 0.7s ease;
+}
+
 .btn:hover {
   transition: 0.7s;
   cursor: pointer;
